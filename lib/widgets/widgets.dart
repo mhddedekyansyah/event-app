@@ -1,7 +1,9 @@
 import 'package:event_app/models/event_model.dart';
+import 'package:event_app/models/user_model.dart';
 import 'package:event_app/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_stack/image_stack.dart';
 import 'package:intl/intl.dart';
 
 part 'home_app_bar.dart';

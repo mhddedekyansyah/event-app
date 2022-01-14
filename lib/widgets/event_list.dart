@@ -34,7 +34,10 @@ final List<EventModel> eventList = EventModel.generatedEvent();
           child: ListView.separated(
             padding: EdgeInsets.symmetric(horizontal: 24),
             itemBuilder: (context, index) => GestureDetector(
-              onTap: (){},
+              onTap: () {
+                print("clicked");
+                // Navigator.push(context, MaterialPageRoute(builder: (context) => EventDetail(eventList[index])));
+              },
               child: EventItem(eventList[index]),
             ),
             separatorBuilder: (_,index) => const SizedBox(height: 24,), 

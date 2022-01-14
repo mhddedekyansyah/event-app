@@ -14,8 +14,8 @@ class EventModel{
 
   static List<EventModel> generatedEvent(){
     return [
-      EventModel(label: 'Festival', date: DateTime.now(), name: 'Midnight Bimosaurus Live', address: 'Medan', urlPath: 'assets/images/imagehero.png'),
-      EventModel(label: 'Festival', date: DateTime.now(), name: 'Eduation', address: 'Jakarta', urlPath: 'assets/images/imagehero1.png'),
+      EventModel(label: 'Festival', date: DateTime.now(), name: 'Midnight Bimosaurus Live', time: '3am', address: 'Medan', urlPath: 'assets/images/imagehero.png'),
+      EventModel(label: 'Festival', date: DateTime.now(), name: 'Eduation',time: '2pm', address: 'Jakarta', urlPath: 'assets/images/imagehero1.png'),
     ];
   }
 }

@@ -34,7 +34,7 @@ final List<EventModel> eventList = EventModel.generatedEvent();
             scrollDirection: Axis.horizontal,
             padding: EdgeInsets.symmetric(horizontal: 24),
             itemBuilder: (context, index) => GestureDetector(
-              onTap: (){},
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EventDetail(eventList[index]))),
               child: EventItem(eventList[index]),
             ),
             separatorBuilder: (_,index) => const SizedBox(width: 24,), 
